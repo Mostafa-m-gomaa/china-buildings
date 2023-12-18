@@ -1,0 +1,113 @@
+@import "../helpers/mixins";
+.about-us{
+    
+    padding: 150px;
+    @include media(mopile){
+        padding: 100px 5px 5px 5px;
+       
+      }
+    .container{
+        
+        @include media(mopile){
+          padding: 4px;
+            width: 92%;
+          }
+    }
+    .menu{
+        
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        margin-bottom: 25px;
+        @include media(mopile){
+           gap: 15px;
+         }
+        span{
+            text-transform: capitalize;
+            font-size: 25px;
+            cursor: pointer;
+            background-color: var(--my-color);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            border-radius: 5px;
+            @include media(mopile){
+                font-size: 15px;
+             }
+        }
+    }
+    .cont{
+        position: relative;
+        width: 90%;
+        margin: auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0px;
+        overflow-x: hidden;
+        overflow-y:initial;
+        @include media(mopile){
+          max-width: 90%;
+          padding: 5px;
+            }
+        .about{
+            position: relative;
+            left: 0%;
+            transition: 0.3s;
+            @include media(mopile){
+               padding: 5px;
+                 }
+            p{
+                font-size: 18px;
+                line-height: 30px;
+                @include media(mopile){
+                    font-size: 16px;
+                    max-width: 95%;
+                     }
+            }
+        }
+        .about-hide{
+           
+            left: -120%;
+        }
+        .contact{
+            position: absolute;
+            padding: 15px;
+            transition: 0.3s;
+            right: -120%;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            text-transform: capitalize;
+            @include media(mopile){
+                right: -500%;
+                // max-width: 90%;
+                }
+            a{
+                color: blue;
+                font-size: 19px;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                @include media(mopile){
+                   max-width: 40%;
+                    }
+            }
+            .icons{
+                flex-direction: row;
+                img{
+                    width: 40px;
+                  }  
+            }
+         
+        }
+        .contact-hide{
+            right: 180px;
+            @include media(mopile){
+                right: -80%;
+                }
+        }
+    }
+}

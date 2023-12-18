@@ -1,0 +1,72 @@
+.part .container {
+  text-align: center;
+  padding: 30px;
+  border: 1px solid rgb(124, 122, 117);
+  border-radius: 20px;
+  position: relative;
+  top: -50px;
+  background-color: white;
+}
+.part .container .factories {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 0 0;
+  gap: 20px;
+}
+.part .container .factories img {
+  max-width: 100px;
+  min-width: 100px;
+}
+@media (max-width: 767px) {
+  .part .container .factories img {
+    max-width: 70px;
+    min-width: 70px;
+  }
+}
+.part .container h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 54px;
+  display: inline-block;
+  letter-spacing: -0.29px;
+  margin: 0;
+  color: var(--my-color);
+  background: -webkit-linear-gradient(10deg, #995738, #ff6600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.part .container h4 {
+  font-size: 24px;
+}
+.part .container .icons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  background: aliceblue;
+  padding: 25px;
+  border-radius: 25px;
+}
+@media (max-width: 767px) {
+  .part .container .icons {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+.part .container .one {
+  display: flex;
+  gap: 30px;
+}
+.part .container .one .txt {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.part .container .one .num {
+  font-weight: 700;
+  font-size: 22px;
+  color: #ff6600;
+}
+.part .container .one img {
+  width: 70px;
+}/*# sourceMappingURL=part.css.map */

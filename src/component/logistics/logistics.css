@@ -1,0 +1,106 @@
+.logistics {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.logistics .form-box {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0px 0px 15px -7px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .logistics .form-box {
+    flex-direction: column;
+  }
+}
+.logistics .form-box form {
+  width: 96%;
+  padding: 40px 20px;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+}
+.logistics .form-box form div {
+  min-width: 15%;
+  border: 6px solid var(--my-color);
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (max-width: 767px) {
+  .logistics .form-box form {
+    width: 80%;
+    padding: 30px 5px;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+  }
+}
+.logistics .form-box form .msg textarea {
+  height: 180px;
+  border-radius: 10px;
+}
+.logistics .form-box form button {
+  background: rgb(34, 151, 195);
+  color: white;
+  width: 80%;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  text-transform: capitalize;
+  margin: 0 auto;
+}
+.logistics .form-box form label {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  gap: 8px;
+}
+@media (max-width: 767px) {
+  .logistics .form-box form label {
+    width: 85%;
+    margin: auto;
+  }
+}
+.logistics .form-box form label input {
+  height: 30px;
+  font-size: 14px;
+  padding: 0 5px;
+}
+.logistics .form-box form label select {
+  height: 30px;
+  font-size: 15px;
+}
+.logistics .form-box .txt {
+  width: 50%;
+  padding: 20px;
+  background: rgb(34, 151, 195);
+  background: linear-gradient(0deg, rgb(34, 151, 195) 0%, rgb(253, 45, 45) 100%);
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-items: space-around;
+}
+@media (max-width: 767px) {
+  .logistics .form-box .txt {
+    width: 100%;
+    padding: 30px 0;
+  }
+}
+.logistics .form-box .txt img {
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px -1px;
+  margin: auto;
+}/*# sourceMappingURL=logistics.css.map */

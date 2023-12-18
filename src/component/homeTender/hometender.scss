@@ -1,0 +1,60 @@
+@import "../helpers/mixins";
+.h-tender{
+    padding: 20px 0;
+    .container{
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 5px 5px 20px;
+        border: 1px soli rgb(197, 193, 197);
+        border-radius: 15px;
+        h1{
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 54px;
+            display: inline-block;
+            letter-spacing: -0.29px;
+            margin: 0;
+            color: #ec5700;
+            background: -webkit-linear-gradient(10deg, #e9a019, #ff0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+        }
+        h3{
+            text-transform: capitalize;
+            font-weight: 400;
+            color: #383736;
+            letter-spacing: 2px;
+        }
+        .icons{
+            display: flex;
+            justify-content: space-around;
+            background: aliceblue;
+            padding: 25px;
+            border-radius: 25px;
+            @include media(mopile){
+           flex-direction: column;
+           gap: 35px;
+                    }
+        }
+            .one{
+                display: flex;
+                gap: 30px;
+                .txt{
+                    font-size: 18px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 17px;
+                }
+                .num{
+                    font-weight: 700;
+                    font-size: 22px;
+                    color: #ff6600;
+                }
+                img{
+                    width: 70px;
+                }
+            }
+    }
+}

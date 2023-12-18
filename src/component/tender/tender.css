@@ -1,0 +1,228 @@
+.tender {
+  padding: 150px 0;
+}
+.tender .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tender a {
+  background-color: white;
+  border: 5px solid var(--my-color);
+  margin: 0 auto;
+  padding: 25px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.tender form {
+  width: 65%;
+  display: flex;
+  padding: 20px;
+  margin: auto;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  background: rgb(58, 91, 180);
+  background: linear-gradient(90deg, rgb(58, 91, 180) 0%, rgb(252, 69, 69) 100%);
+  color: rgb(208, 214, 219);
+  border-radius: 15px;
+}
+.tender form button {
+  width: 150px;
+  margin: auto;
+  padding: 20px;
+  background-color: orangered;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  text-transform: capitalize;
+  letter-spacing: 8px;
+}
+.tender form .two {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .tender form .two {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.tender form .two .first {
+  width: 45%;
+  border: 4px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .tender form .two .first {
+    width: 90%;
+  }
+}
+.tender form .two .first .head {
+  color: rgb(11, 31, 87);
+  font-weight: 800;
+  border-bottom: 2px solid rgb(11, 31, 87);
+  padding-bottom: 10px;
+}
+.tender form .two .second {
+  width: 45%;
+  border: 5px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .tender form .two .second {
+    width: 90%;
+  }
+}
+.tender form .two .second .head {
+  color: rgb(11, 31, 87);
+  font-weight: 800;
+  border-bottom: 2px solid rgb(11, 31, 87);
+  padding-bottom: 10px;
+}
+.tender form img {
+  width: 100px;
+  margin: auto;
+  border-radius: 50%;
+}
+.tender form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(208, 214, 219);
+  font-weight: 600;
+}
+.tender form label input {
+  width: 50%;
+  margin: auto;
+  height: 27px;
+  border-radius: 5px;
+  padding: 0 5px;
+  border: none;
+  background-color: white;
+}
+@media (max-width: 767px) {
+  .tender form label input {
+    width: 90%;
+  }
+}
+.tender form label ::-moz-placeholder {
+  color: black;
+}
+.tender form label ::placeholder {
+  color: black;
+}
+.tender .req {
+  padding: 40px;
+  margin-bottom: 60px;
+  background-color: white;
+}
+@media (max-width: 767px) {
+  .tender .req {
+    padding: 40px 0;
+  }
+}
+.tender .req h1 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+@media (max-width: 767px) {
+  .tender .req h1 {
+    font-size: 20px;
+  }
+}
+.tender .req .cont {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.tender .req .cont .ques {
+  font-weight: 900;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .tender .req .cont .ques {
+    font-size: 15px;
+  }
+}
+.tender .req .cont .ans {
+  margin-left: 60px;
+}
+@media (max-width: 767px) {
+  .tender .req .cont .ans {
+    font-size: 15px;
+  }
+}
+.tender .faq {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.tender .faq .cont {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 20px;
+  background-color: rgb(223, 217, 217);
+  padding: 15px;
+  border-radius: 10px;
+  color: black;
+}
+.tender .faq .cont .ans {
+  display: none;
+}
+.tender .intro-box {
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 6px 6px 5px -5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .tender .intro-box {
+    flex-direction: column;
+    padding: 40px 0;
+    border: 2px solid;
+  }
+}
+.tender .intro-box .box {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .tender .intro-box .box {
+    width: 80%;
+  }
+}
+.tender .intro-box .box img {
+  width: 150px;
+  max-height: 90px;
+  min-height: 50px;
+}
+@media (max-width: 767px) {
+  .tender .intro-box .box img {
+    margin: auto;
+  }
+}/*# sourceMappingURL=tender.css.map */

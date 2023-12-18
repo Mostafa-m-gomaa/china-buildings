@@ -1,0 +1,90 @@
+@import "../helpers/mixins";
+.nav{
+   
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    img{
+        width: 150px;
+      
+    }
+    .container{
+        padding:0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 0 0 15px 15px;
+        .burger{
+            display: none;
+            @include media(mopile){
+                display: block;
+                width: 40px;
+                cursor: pointer;
+             }
+        }
+        .about{
+            font-size: 15px;
+            margin-right: 150px;  
+            width: 100px;
+            
+            @include media(mopile){
+                margin:0 0 0 35px;
+            }
+        }
+
+        .list{
+            display: flex;
+            gap: 40px;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 15px;
+            @include media(mopile){
+                flex-direction: column;
+                position: fixed;
+                top: 50px;
+                background: black;
+
+                padding: 20px 40px;
+                color: white;
+                border-radius: 15px;
+                border: 3px solid white;
+                right: -60%;
+                transition: 0.2s;
+                transform: translateX(50%);
+                // display: none;
+            }
+            select{
+                padding: 10px;
+                border-radius: 5px;
+                option{
+                    padding: 10px;
+                    // font-size: 30px;
+                    height: 20px;
+                }
+            }
+            .logis{
+                margin-right: 250px;
+                
+                @include media(mopile){
+                   margin: 0;
+                }
+            }
+            .login{
+                color: rgb(0, 0, 0);
+                display: none;
+                background-color: var(--my-color);
+                padding: 10px 35px;
+                border-radius: 5px;
+            }
+   
+          
+        }
+        .menu-active{
+            @include media(mopile){
+                right: 50%;
+             }
+        }
+    }
+}

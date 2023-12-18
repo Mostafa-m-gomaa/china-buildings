@@ -1,0 +1,87 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+.nav img {
+  width: 150px;
+}
+.nav .container {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+}
+.nav .container .burger {
+  display: none;
+}
+@media (max-width: 767px) {
+  .nav .container .burger {
+    display: block;
+    width: 40px;
+    cursor: pointer;
+  }
+}
+.nav .container .about {
+  font-size: 15px;
+  margin-right: 150px;
+  width: 100px;
+}
+@media (max-width: 767px) {
+  .nav .container .about {
+    margin: 0 0 0 35px;
+  }
+}
+.nav .container .list {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .nav .container .list {
+    flex-direction: column;
+    position: fixed;
+    top: 50px;
+    background: black;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 15px;
+    border: 3px solid white;
+    right: -60%;
+    transition: 0.2s;
+    transform: translateX(50%);
+  }
+}
+.nav .container .list select {
+  padding: 10px;
+  border-radius: 5px;
+}
+.nav .container .list select option {
+  padding: 10px;
+  height: 20px;
+}
+.nav .container .list .logis {
+  margin-right: 250px;
+}
+@media (max-width: 767px) {
+  .nav .container .list .logis {
+    margin: 0;
+  }
+}
+.nav .container .list .login {
+  color: rgb(0, 0, 0);
+  display: none;
+  background-color: var(--my-color);
+  padding: 10px 35px;
+  border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .nav .container .menu-active {
+    right: 50%;
+  }
+}/*# sourceMappingURL=nav.css.map */

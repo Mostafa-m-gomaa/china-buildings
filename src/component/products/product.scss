@@ -1,0 +1,57 @@
+@import "../helpers/mixins";
+.products{
+    padding: 130px 0;
+    .heading{
+        background-color: antiquewhite;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+        h1{
+            @include media(mopile){
+              font-size: 20px;
+        }
+        }
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 30px;
+        justify-content: center;
+        .cat-card{
+            text-align: center;
+            border: 1px solid rgb(204, 204, 197);
+            border-radius: 20px;
+            padding: 15px;
+            background-color: white;
+            img{
+                min-width: 210px;
+                max-width: 210px;
+                min-height: 150px;
+                max-height: 150px;
+                border-radius: 20px;
+
+            }
+            div{
+                width: 100%;
+                margin: auto;
+                font-size: 15px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-transform: capitalize;
+            }
+            a{
+                background-color: var(--my-color);
+                color: rgb(0, 0, 0);
+               text-transform: capitalize;
+                padding: 10px 30px;
+                border-radius: 10px;
+
+            }
+        }
+    }
+}

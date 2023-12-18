@@ -1,0 +1,111 @@
+.tender-f {
+  padding: 120px 0;
+}
+.tender-f form {
+  width: 65%;
+  display: flex;
+  padding: 20px;
+  margin: auto;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  background: rgb(58, 91, 180);
+  background: linear-gradient(90deg, rgb(58, 91, 180) 0%, rgb(252, 69, 69) 100%);
+  color: rgb(208, 214, 219);
+  border-radius: 15px;
+}
+.tender-f form button {
+  width: 150px;
+  margin: auto;
+  padding: 20px;
+  background-color: orangered;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  text-transform: capitalize;
+  letter-spacing: 8px;
+}
+.tender-f form .two {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .tender-f form .two {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.tender-f form .two .first {
+  width: 45%;
+  border: 4px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .tender-f form .two .first {
+    width: 90%;
+  }
+}
+.tender-f form .two .first .head {
+  color: rgb(11, 31, 87);
+  font-weight: 800;
+  border-bottom: 2px solid rgb(11, 31, 87);
+  padding-bottom: 10px;
+}
+.tender-f form .two .second {
+  width: 45%;
+  border: 5px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .tender-f form .two .second {
+    width: 90%;
+  }
+}
+.tender-f form .two .second .head {
+  color: rgb(11, 31, 87);
+  font-weight: 800;
+  border-bottom: 2px solid rgb(11, 31, 87);
+  padding-bottom: 10px;
+}
+.tender-f form img {
+  width: 100px;
+  margin: auto;
+  border-radius: 50%;
+}
+.tender-f form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(208, 214, 219);
+  font-weight: 600;
+}
+.tender-f form label input {
+  width: 50%;
+  margin: auto;
+  height: 27px;
+  border-radius: 5px;
+  padding: 0 5px;
+  border: none;
+  background-color: white;
+}
+@media (max-width: 767px) {
+  .tender-f form label input {
+    width: 90%;
+  }
+}
+.tender-f form label ::-moz-placeholder {
+  color: black;
+}
+.tender-f form label ::placeholder {
+  color: black;
+}/*# sourceMappingURL=tenderf.css.map */

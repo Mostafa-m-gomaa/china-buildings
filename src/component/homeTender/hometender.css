@@ -1,0 +1,60 @@
+.h-tender {
+  padding: 20px 0;
+}
+.h-tender .container {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 5px 5px 20px;
+  border: 1px soli rgb(197, 193, 197);
+  border-radius: 15px;
+}
+.h-tender .container h1 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 54px;
+  display: inline-block;
+  letter-spacing: -0.29px;
+  margin: 0;
+  color: #ec5700;
+  background: -webkit-linear-gradient(10deg, #e9a019, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.h-tender .container h3 {
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #383736;
+  letter-spacing: 2px;
+}
+.h-tender .container .icons {
+  display: flex;
+  justify-content: space-around;
+  background: aliceblue;
+  padding: 25px;
+  border-radius: 25px;
+}
+@media (max-width: 767px) {
+  .h-tender .container .icons {
+    flex-direction: column;
+    gap: 35px;
+  }
+}
+.h-tender .container .one {
+  display: flex;
+  gap: 30px;
+}
+.h-tender .container .one .txt {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.h-tender .container .one .num {
+  font-weight: 700;
+  font-size: 22px;
+  color: #ff6600;
+}
+.h-tender .container .one img {
+  width: 70px;
+}/*# sourceMappingURL=hometender.css.map */

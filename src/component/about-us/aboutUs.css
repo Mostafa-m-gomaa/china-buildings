@@ -1,0 +1,123 @@
+.about-us {
+  padding: 150px;
+}
+@media (max-width: 767px) {
+  .about-us {
+    padding: 100px 5px 5px 5px;
+  }
+}
+@media (max-width: 767px) {
+  .about-us .container {
+    padding: 4px;
+    width: 92%;
+  }
+}
+.about-us .menu {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .about-us .menu {
+    gap: 15px;
+  }
+}
+.about-us .menu span {
+  text-transform: capitalize;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: var(--my-color);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .about-us .menu span {
+    font-size: 15px;
+  }
+}
+.about-us .cont {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0px;
+  overflow-x: hidden;
+  overflow-y: initial;
+}
+@media (max-width: 767px) {
+  .about-us .cont {
+    max-width: 90%;
+    padding: 5px;
+  }
+}
+.about-us .cont .about {
+  position: relative;
+  left: 0%;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  .about-us .cont .about {
+    padding: 5px;
+  }
+}
+.about-us .cont .about p {
+  font-size: 18px;
+  line-height: 30px;
+}
+@media (max-width: 767px) {
+  .about-us .cont .about p {
+    font-size: 16px;
+    max-width: 95%;
+  }
+}
+.about-us .cont .about-hide {
+  left: -120%;
+}
+.about-us .cont .contact {
+  position: absolute;
+  padding: 15px;
+  transition: 0.3s;
+  right: -120%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .about-us .cont .contact {
+    right: -500%;
+  }
+}
+.about-us .cont .contact a {
+  color: blue;
+  font-size: 19px;
+}
+.about-us .cont .contact div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .about-us .cont .contact div {
+    max-width: 40%;
+  }
+}
+.about-us .cont .contact .icons {
+  flex-direction: row;
+}
+.about-us .cont .contact .icons img {
+  width: 40px;
+}
+.about-us .cont .contact-hide {
+  right: 180px;
+}
+@media (max-width: 767px) {
+  .about-us .cont .contact-hide {
+    right: -80%;
+  }
+}/*# sourceMappingURL=aboutUs.css.map */

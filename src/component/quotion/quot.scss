@@ -1,0 +1,151 @@
+@import "../helpers/mixins";
+.quot{
+    padding: 100px 0;
+    .two-section{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @include media(mopile){
+            flex-direction: column;
+         }
+        .left{
+            width: 70%;
+            background-color: white;
+            box-shadow: 1px 1px 20px 1px;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @include media(mopile){
+                width: 90%;
+             }
+          
+            .one{
+                padding: 10px 10px 40px 10px;
+                border: 1px solid rgb(114, 106, 106);
+                border-radius: 5px;
+                display: flex;
+                // gap: 30px;
+                position: relative;
+                align-items: center;
+                justify-content: space-between;
+                @include media(mopile){
+                    flex-direction: column;
+                    padding: 10px 4px;
+                    position: relative;
+                    gap: 5px;
+                 }
+                 .comment{
+                    position: absolute;
+                    width: 65%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 30px;
+                    bottom: 10px;
+                    text-align: center;
+                    text-transform: capitalize;
+                    border: 2px solid;
+                    @include media(mopile){
+                    bottom: 0;
+                    display: none;
+                     }
+                 }
+                select{
+                    height: 30px;
+                    font-size: 15px;
+                }
+                .remove{
+                    background-color: rgb(196, 149, 149);
+                    padding: 4px 6px;
+                    color: red;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    cursor: pointer;
+                    @include media(mopile){
+                        position: absolute;
+                        right: 10px;
+                     }
+                }
+                .quantity{
+                    border: 1px solid;
+                    padding: 4px;
+                    @include media(mopile){
+                        display: flex;
+                        width: 80%;
+                        overflow: hidden;
+                     }
+                    input ,select,option{
+                        border: none;
+                        outline: none;
+                        height: 20px;
+                        font-size: 15px;
+                        border-right: 1px solid;
+                        @include media(mopile){
+                            width: 50%;
+                         }
+                    }
+                }
+                .name{
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                img{
+                    min-width: 100px;
+                    max-width: 100px;
+                    max-height: 70px;
+                    min-height: 70px;
+                }
+            }
+        }
+        .right{
+            width: 25%;
+            @include media(mopile){
+                width: 70%;
+                margin: auto;
+             }
+            h3{
+                text-align: center;
+                text-transform: capitalize;
+
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                background-color: white;
+                padding: 15px;
+                border-radius: 10px;
+                // background-color: rgb(144, 12, 184);
+                button{
+                    width: 60%;
+                    padding: 15px 0;
+                    background-color: var(--my-color);
+                    border-radius: 8px;
+                    color: white;
+                    font-size: 16px;
+                    margin: auto;
+                    border: none;
+                    cursor: pointer;
+                }
+                label{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    text-transform: capitalize;
+                    // border: 1px solid black;
+                    text-align: center;
+                    padding-top: 8px;
+                    @include media(mopile){
+                       width: 80%;
+                       margin: auto;
+                     }
+                    input{
+                        height: 30px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
